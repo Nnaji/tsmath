@@ -1,0 +1,20 @@
+{
+  "name": "tsmath",
+  "version": "1.0.0",
+  "description": "Math functions using typescript",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nnaji/tsmath.git"
+  },
+  "keywords": [],
+  "author": "Kingsley <kingsley.nnaji@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nnaji/tsmath/issues"
+  },
+  "homepage": "https://github.com/Nnaji/tsmath#readme"
+}
