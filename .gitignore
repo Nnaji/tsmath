@@ -1,0 +1,11 @@
+/build
+.DS_Store
+*/node_modules/**
+node_modules/
+package-lock.json
+.env
+*.log
+*.swp
+npm-debug.log*
+*/dist/*
+.eslintcache
