@@ -4,7 +4,7 @@
   "jsRules": {},
   "rules": {
     "quotemark": [true, "single"],
-    "indent": [true, "tabs"],
+    "indent": [true, "tabs", 2],
     "array-type": [true, "array"],
     "array-type": [true, "array-simple"],
     "array-type": [true, "generic"],
