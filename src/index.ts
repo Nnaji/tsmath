@@ -11,9 +11,19 @@ id = (n: number): number => {
 	return n;
 };
 
+// Counter function takes a number and increments it by 1
+// counter function definition
 let counter = id;
+// id function implementation
 counter = (n: number): number => {
-	const result = (n = n + 1);
+	const result: number = (n = n + 1);
 	return result;
 };
-export default { id, counter };
+
+let add: (a: number, b: number) => number;
+add = (a: number, b: number): number => {
+	const total: number = a + b;
+	return total;
+};
+
+export default { id, counter, add };
