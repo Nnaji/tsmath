@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register -w test/**/*.ts",
+    "test:watch": "mocha --require ts-node/register --watch-extension ts --watch \"test/**/*.ts\"",
+    "test": "mocha --opts mocha.opts --watch-extention ts --watch",
     "dev": "webpack --env.mode development",
     "build": "webpack --env.mode production"
   },
