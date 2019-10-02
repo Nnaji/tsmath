@@ -11,4 +11,9 @@ id = (n: number): number => {
 	return n;
 };
 
-export default { id };
+let counter = id;
+counter = (n: number): number => {
+	const result = (n = n + 1);
+	return result;
+};
+export default { id, counter };
