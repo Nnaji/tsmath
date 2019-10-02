@@ -3,4 +3,12 @@
 	@LICENSE: MIT
 	Creation Date: 02.10.2019
 ***************************************************************/
-console.log('Hello from tsMath');
+// Identity function takes a number as its only argument and returns that number when called
+// id function definition
+let id: (n: number) => number;
+// id function implementation
+id = (n: number): number => {
+	return n;
+};
+
+export default { id };
