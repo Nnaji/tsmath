@@ -19,11 +19,22 @@ counter = (n: number): number => {
 	const result: number = (n = n + 1);
 	return result;
 };
-
+// Add function take two arguments and returns their product
+// add function definition
 let add: (a: number, b: number) => number;
+// add function implementation
 add = (a: number, b: number): number => {
 	const total: number = a + b;
 	return total;
 };
 
-export default { id, counter, add };
+// Sub function take two arguments and returns their difference
+// sub function definition
+let sub: (a: number, b: number) => number;
+// sub function implementation
+sub = (a: number, b: number): number => {
+	const diff: number = a - b;
+	return diff;
+};
+
+export default { id, counter, add, sub };
