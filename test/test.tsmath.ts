@@ -26,9 +26,17 @@ describe('TS MATH FUNCTIONS', () => {
 
 	// add function section
 	describe('add function', () => {
-		it('should return 2', () => {
+		it('should return 3', () => {
 			const total: number = tsmath.add(1, 2);
 			expect(total).to.equal(3);
+		});
+	});
+
+	// sub function section
+	describe('sub function', () => {
+		it('should return 0', () => {
+			const diff: number = tsmath.sub(2, 2);
+			expect(diff).to.equal(0);
 		});
 	});
 });
