@@ -47,4 +47,11 @@ describe('TS MATH FUNCTIONS', () => {
 			expect(hcd).to.equal(3);
 		});
 	});
+	// mult function section
+	describe('multiplication function', () => {
+		it('should return 8', () => {
+			const product: (a: number) => number = tsmath.mult(4);
+			expect(product(2)).to.equal(8);
+		});
+	});
 });
