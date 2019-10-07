@@ -8,7 +8,7 @@
 let id: (n: number) => number;
 // id function implementation
 id = (n: number): number => {
-	return n;
+  return n;
 };
 
 // Counter function takes a number and increments it by 1
@@ -16,16 +16,16 @@ id = (n: number): number => {
 let counter = id;
 // id function implementation
 counter = (n: number): number => {
-	const result: number = (n = n + 1);
-	return result;
+  const result: number = (n = n + 1);
+  return result;
 };
 // Add function take two arguments and returns their product
 // add function definition
 let add: (a: number, b: number) => number;
 // add function implementation
 add = (a: number, b: number): number => {
-	const total: number = a + b;
-	return total;
+  const total: number = a + b;
+  return total;
 };
 
 // Sub function take two arguments and returns their difference
@@ -33,8 +33,23 @@ add = (a: number, b: number): number => {
 let sub: (a: number, b: number) => number;
 // sub function implementation
 sub = (a: number, b: number): number => {
-	const diff: number = a - b;
-	return diff;
+  const diff: number = a - b;
+  return diff;
 };
 
-export default { id, counter, add, sub };
+// Highest common divisor function takes an argument of the type number and returns the hcd of that number
+// hcd function definition
+let hcdivisor: (a: number) => number;
+// hcd function implementation
+hcdivisor = (a: number): number => {
+  let result: number = 1;
+  let current: number = 2;
+  for (current; current < a; current = current + 1) {
+    if (a % current === 0) {
+      result = current;
+    }
+  }
+  return result;
+};
+
+export default {id, counter, add, sub, hcdivisor};

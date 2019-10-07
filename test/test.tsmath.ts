@@ -39,4 +39,12 @@ describe('TS MATH FUNCTIONS', () => {
 			expect(diff).to.equal(0);
 		});
 	});
+
+	// Highest common divisor function section
+	describe('hcdivisor function', () => {
+		it('should return 3', () => {
+			const hcd: number = tsmath.hcdivisor(9);
+			expect(hcd).to.equal(3);
+		});
+	});
 });
