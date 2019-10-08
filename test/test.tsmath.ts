@@ -5,7 +5,7 @@
 ***************************************************************/
 import { expect } from 'chai';
 import 'mocha';
-import tsmath from '../src/';
+import tsmath from '../src';
 
 describe('TS MATH FUNCTIONS', () => {
 	// id function section
