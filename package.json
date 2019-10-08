@@ -7,10 +7,14 @@
     "test": "test"
   },
   "scripts": {
-    "test:watch": "mocha --require ts-node/register --watch-extension ts --watch \"test/**/*.ts\"",
-    "test": "mocha --opts mocha.opts --watch-extention ts --watch",
-    "dev": "webpack --env.mode development",
-    "build": "webpack --env.mode production"
+    "test": "mocha --require ts-node/register --watch-extension ts --watch \"test/**/*.ts\"",
+    "pretest": "npm run lint",
+    "test:watch": "mocha --opts mocha.opts --watch-extention ts --watch",
+    "lint": "tslint ./test/**/*.ts --project ./tsconfig.json",
+    "lint:dev": "tslint ./src/**/*.ts --project ./tsconfig.json",
+    "dev": "webpack --env.mode development -w",
+    "predev": "npm run lint:dev",
+    "build": "webpack -- --env.mode production"
   },
   "repository": {
     "type": "git",
@@ -32,6 +36,7 @@
     "prettier": "1.18.2",
     "ts-loader": "6.2.0",
     "ts-node": "8.4.1",
+    "tslint": "5.20.0",
     "typescript": "3.6.3",
     "webpack": "4.41.0",
     "webpack-cli": "3.3.9"

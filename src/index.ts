@@ -53,7 +53,7 @@ hcdivisor = (a: number): number => {
 };
 
 /* mult function take a argument and returns a function that returns the product as a result by taking an argument */
-// mult function definition
+// Mult function definition
 let mult: (a: number) => (b: number) => number;
 // mult function implemetation
 mult = (a: number) => {
