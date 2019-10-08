@@ -62,4 +62,20 @@ mult = (a: number) => {
 	};
 };
 
-export default { id, counter, add, sub, hcdivisor, mult };
+// IsPrime function a single argument and return true if a parameter is a prime number and return false otherwise
+let isPrime: (a: number) => boolean;
+isPrime = (a: number): boolean => {
+	let result: boolean = true;
+	let divisor: number = 2;
+	if (a <= 1) {
+		result = false;
+	}
+	for (divisor; divisor < a; divisor = divisor + 1) {
+		if (a % divisor === 0) {
+			result = false;
+		}
+	}
+	return result;
+};
+
+export default { id, counter, add, sub, hcdivisor, mult, isPrime };

@@ -54,4 +54,11 @@ describe('TS MATH FUNCTIONS', () => {
 			expect(product(2)).to.equal(8);
 		});
 	});
+	// IsPrime function section
+	describe('IsPrime function', () => {
+		it('should return true', () => {
+			const prime: boolean = tsmath.isPrime(2);
+			expect(prime).to.equal(true);
+		});
+	});
 });
