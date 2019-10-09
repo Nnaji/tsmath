@@ -1,4 +1,4 @@
-build/
+*build/
 .DS_Store
 */node_modules/**
 node_modules/
@@ -7,5 +7,5 @@ package-lock.json
 *.log
 *.swp
 npm-debug.log*
-dist/
+*dist/
 .eslintcache
