@@ -1,2 +1,3 @@
 # tsmath
-Math functions using typescript
+
+- Math functions using typescript
